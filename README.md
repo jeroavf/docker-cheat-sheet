@@ -73,6 +73,18 @@ export DOCKER_HOST=tcp://localhost:2375
 docker version
 ```
 
+Using plains boot2docker on mac os x:
+```
+boot2docker init    # initialize 
+boot2docker up      # start 
+
+boot2docker stop      #Upgrade the Boot2docker VM image
+boot2docker download
+boot2docker up
+
+
+```
+
 > NOTE: the YungSang boot2docker opens up port forwarding to the network, so is not safe on public wifi.  You can make a good argument that docker without TLS is [fundamentally unsafe](https://medium.com/@kevanahlquist/never-run-docker-on-a-tcp-socket-without-tls-1e7df31cf18c).  I only do it because I have [Hands Off](http://www.oneperiodic.com/products/handsoff/) installed to limit external network access.  
 
 Then start up a container:
